@@ -1,12 +1,11 @@
-﻿using AutoMapper;
-using DataAccess.Abstract;
+﻿using DataAccess.Abstract;
 using Entities.Concrete;
 using Mvc.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace DataAccess.Concrete
 {
@@ -57,6 +56,13 @@ namespace DataAccess.Concrete
             {
                 context.Products.Update(entity);
                 context.SaveChanges();
+            }
+        }
+        public List<Product> SearchByName(string word)
+        {
+            using (var context = new Context())
+            {
+               return context.Products.Where(p => p.Name.StartsWith(word)).ToList();
             }
         }
     }
