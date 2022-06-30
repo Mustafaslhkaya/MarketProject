@@ -1,7 +1,7 @@
 # MarketProject
 
 1. Mvc ve repository pattern kullandım.Mvc kullanarak işlemleri 3 e ayırıp hepsine tek sorumluluk yükledim.
-Generic Repository patterni aynı işlem ve metotları tekrar tekrar yazmamak için kullandım.Bu rojede sadece bir entity olusturdum ancak birden fazla entity eklediğimde
+Generic Repository patterni aynı işlem ve metotları tekrar tekrar yazmamak için kullandım.Bu projede sadece bir entity olusturdum ancak birden fazla entity eklediğimde
 sadece bu interfaceden kalıtım alarak kolayca o metotları cagırabilirim.
 
 2.Api ile projeler yapmıstım daha önce ancak sadece konsolda calıstırmıstım.Mvc ile api yi daha once beraber hiç kullanmamıstım.Bu sebeple controller kısmında api tarafını 
